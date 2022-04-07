@@ -5,7 +5,7 @@ type Props = TextInputProps & {
     label: string;
 }
 
-export function Input({ label, ...rest }: Props) {
+export function Input({ label , ...rest }: Props) {
     return (
         <View style={styles.container}>
             <Text style={styles.label}>
@@ -14,7 +14,7 @@ export function Input({ label, ...rest }: Props) {
 
             <TextInput 
                 keyboardType="numeric"
-                style={styles.input} 
+                style={styles.input}
                 {...rest} 
             />
         </View>
